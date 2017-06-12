@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.gettouched.touched.MainActivity"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+
+    <ImageView
+        android:id="@+id/circleImageView"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        app:srcCompat="@drawable/circle"
+        app:layout_constraintRight_toLeftOf="@+id/clockimageView"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/clockimageView"
+        android:layout_marginTop="142dp"
+        app:layout_constraintTop_toBottomOf="@+id/rectanbleImageView"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="39dp"
+        android:layout_marginStart="39dp" />
+
+    <ImageView
+        android:id="@+id/rectanbleImageView"
+        android:layout_width="100dp"
+        android:layout_height="137dp"
+        app:srcCompat="@drawable/triangle"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/starImageView"
+        app:layout_constraintRight_toRightOf="@+id/starImageView"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toRightOf="@+id/warningImageView"
+        android:layout_above="@+id/starImageView"
+        android:layout_alignRight="@+id/warningImageView"
+        android:layout_alignEnd="@+id/warningImageView" />
+
+    <ImageView
+        android:id="@+id/starImageView"
+        android:layout_width="173dp"
+        android:layout_height="124dp"
+        app:srcCompat="@drawable/star"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toBottomOf="@+id/clockimageView"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_below="@+id/circleImageView"
+        android:layout_alignLeft="@+id/circleImageView"
+        android:layout_alignStart="@+id/circleImageView"
+        android:layout_marginTop="35dp" />
+
+    <ImageView
+        android:id="@+id/warningImageView"
+        android:layout_width="106dp"
+        android:layout_height="62dp"
+        app:srcCompat="?android:attr/alertDialogIcon"
+        app:layout_constraintRight_toLeftOf="@+id/clockimageView"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/circleImageView"
+        app:layout_constraintTop_toTopOf="@+id/rectanbleImageView"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginBottom="102dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/clockimageView"
+        android:layout_alignStart="@+id/clockimageView" />
+
+    <ImageView
+        android:id="@+id/phoneImageView"
+        android:layout_width="61dp"
+        android:layout_height="60dp"
+        app:srcCompat="@android:drawable/stat_sys_phone_call_forward"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        app:layout_constraintBottom_toTopOf="@+id/rectanbleImageView"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="@+id/rectanbleImageView"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_alignTop="@+id/rectanbleImageView"
+        android:layout_alignRight="@+id/starImageView"
+        android:layout_alignEnd="@+id/starImageView"
+        android:layout_marginRight="17dp"
+        android:layout_marginEnd="17dp" />
+
+    <ImageView
+        android:id="@+id/clockimageView"
+        android:layout_width="87dp"
+        android:layout_height="90dp"
+        app:srcCompat="@android:drawable/ic_lock_idle_alarm"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="32dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="32dp"
+        android:layout_below="@+id/warningImageView"
+        android:layout_toRightOf="@+id/starImageView"
+        android:layout_toEndOf="@+id/starImageView"
+        android:layout_marginTop="39dp" />
+
+</RelativeLayout>
